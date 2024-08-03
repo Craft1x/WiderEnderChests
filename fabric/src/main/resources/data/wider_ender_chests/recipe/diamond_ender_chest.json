@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "IeI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:diamond"
+    },
+    "e": [
+      {
+        "item": "wider_ender_chests:gold_ender_chest"
+      },
+      {
+        "item": "wider_ender_chests:lapis_ender_chest"
+      },
+      {
+        "item": "wider_ender_chests:redstone_ender_chest"
+      }
+    ]
+  },
+  "result": {
+    "id": "wider_ender_chests:diamond_ender_chest"
+  }
+}

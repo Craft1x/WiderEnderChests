@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:copper_ingot"
+    },
+    "e": {
+      "item": "minecraft:ender_chest"
+    }
+  },
+  "pattern": [
+    "III",
+    "IeI",
+    "III"
+  ],
+  "result": {
+    "id": "wider_ender_chests:copper_ender_chest"
+  },
+  "show_notification": true
+}

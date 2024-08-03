@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "e": {
+      "item": "wider_ender_chests:emerald_ender_chest"
+    }
+  },
+  "pattern": [
+    "III",
+    "IeI",
+    "III"
+  ],
+  "result": {
+    "id": "wider_ender_chests:netherite_ender_chest"
+  },
+  "show_notification": true
+}

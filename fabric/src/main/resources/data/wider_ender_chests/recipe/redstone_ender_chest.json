@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "IeI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:redstone"
+    },
+    "e": [
+      {
+        "item": "wider_ender_chests:iron_ender_chest"
+      },
+      {
+        "item": "wider_ender_chests:copper_ender_chest"
+      }
+    ]
+  },
+  "result": {
+    "id": "wider_ender_chests:redstone_ender_chest"
+  }
+}

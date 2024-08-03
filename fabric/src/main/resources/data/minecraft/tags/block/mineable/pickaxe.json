@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "wider_ender_chests:iron_ender_chest",
+    "wider_ender_chests:copper_ender_chest",
+    "wider_ender_chests:gold_ender_chest",
+    "wider_ender_chests:lapis_ender_chest",
+    "wider_ender_chests:redstone_ender_chest",
+    "wider_ender_chests:diamond_ender_chest",
+    "wider_ender_chests:emerald_ender_chest",
+    "wider_ender_chests:netherite_ender_chest"
+  ]
+}

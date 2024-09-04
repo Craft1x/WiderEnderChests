@@ -25,8 +25,8 @@ public abstract class BlocksMix {
         return null;
     }
 
-    @Inject(method = "<clinit>", at = @At("HEAD"))
-    private static void injectedTail(CallbackInfo ci) {
+    @Inject(method = "<clinit>", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/block/HeavyCoreBlock;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V", shift = At.Shift.BY, by = 2))
+    private static void injectedAfter(CallbackInfo ci) {
         ModBlocks.IRON_CHEST = register(
                 MOD_ID + ":iron_ender_chest",
                 new CustomEnderChestBlock(
@@ -55,7 +55,7 @@ public abstract class BlocksMix {
                 MOD_ID + ":gold_ender_chest",
                 new CustomEnderChestBlock(
                         BlockBehaviour.Properties.of()
-                                .mapColor(MapColor.COLOR_ORANGE)
+                                .mapColor(MapColor.GOLD)
                                 .instrument(NoteBlockInstrument.BASEDRUM)
                                 .requiresCorrectToolForDrops()
                                 .strength(22.5F, 600.0F)
@@ -67,7 +67,7 @@ public abstract class BlocksMix {
                 MOD_ID + ":lapis_ender_chest",
                 new CustomEnderChestBlock(
                         BlockBehaviour.Properties.of()
-                                .mapColor(MapColor.COLOR_ORANGE)
+                                .mapColor(MapColor.LAPIS)
                                 .instrument(NoteBlockInstrument.BASEDRUM)
                                 .requiresCorrectToolForDrops()
                                 .strength(22.5F, 600.0F)
@@ -78,7 +78,7 @@ public abstract class BlocksMix {
                 MOD_ID + ":redstone_ender_chest",
                 new CustomEnderChestBlock(
                         BlockBehaviour.Properties.of()
-                                .mapColor(MapColor.COLOR_ORANGE)
+                                .mapColor(MapColor.COLOR_RED)
                                 .instrument(NoteBlockInstrument.BASEDRUM)
                                 .requiresCorrectToolForDrops()
                                 .strength(22.5F, 600.0F)
@@ -89,7 +89,7 @@ public abstract class BlocksMix {
                 MOD_ID + ":diamond_ender_chest",
                 new CustomEnderChestBlock(
                         BlockBehaviour.Properties.of()
-                                .mapColor(MapColor.COLOR_ORANGE)
+                                .mapColor(MapColor.DIAMOND)
                                 .instrument(NoteBlockInstrument.BASEDRUM)
                                 .requiresCorrectToolForDrops()
                                 .strength(22.5F, 600.0F)
@@ -100,7 +100,7 @@ public abstract class BlocksMix {
                 MOD_ID + ":emerald_ender_chest",
                 new CustomEnderChestBlock(
                         BlockBehaviour.Properties.of()
-                                .mapColor(MapColor.COLOR_ORANGE)
+                                .mapColor(MapColor.EMERALD)
                                 .instrument(NoteBlockInstrument.BASEDRUM)
                                 .requiresCorrectToolForDrops()
                                 .strength(22.5F, 600.0F)
@@ -111,7 +111,7 @@ public abstract class BlocksMix {
                 MOD_ID + ":netherite_ender_chest",
                 new CustomEnderChestBlock(
                         BlockBehaviour.Properties.of()
-                                .mapColor(MapColor.COLOR_ORANGE)
+                                .mapColor(MapColor.COLOR_BLACK)
                                 .instrument(NoteBlockInstrument.BASEDRUM)
                                 .requiresCorrectToolForDrops()
                                 .strength(22.5F, 600.0F)

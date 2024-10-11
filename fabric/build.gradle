@@ -25,7 +25,6 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    modApi "me.shedaniel.cloth:cloth-config-fabric:11.1.106"
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.3.5")))
@@ -65,12 +64,12 @@ jar {
 
     eachFile { copyDetails ->
         println copyDetails.path
-        if (copyDetails.path == 'mixins.wider_ender_chests.json' ) {
+        if (copyDetails.path == 'mixins.wider_ender_chests.json') {
             filter { line ->
                 line.replace('mixins.wider_ender_chests.refmap.json', "mixins.wider_ender_chests.refmap.fabric.json")
             }
         }
-        if (copyDetails.path == 'fabric.mod.json' ) {
+        if (copyDetails.path == 'fabric.mod.json') {
             filter { line ->
                 line.replace('mixins.wider_ender_chests.json', "mixins.wider_ender_chests.fabric.json")
             }

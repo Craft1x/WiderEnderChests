@@ -1,0 +1,26 @@
+{
+  "package": "com.craftix.wider_ender_chests.shared.mixin",
+  "minVersion": "0.6",
+  "required": true,
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "BlockEntityTypeMix",
+    "BlocksMix",
+    "CreativeModeTabsMix",
+    "EnderChestBlockEntityMix",
+    "ItemsMix",
+    "MenuTypeMix",
+    "PlayerEnderChestContainerMix",
+    "ServerPlayerMix"
+  ],
+  "client": [
+    "BlockEntityWithoutLevelRendererMix",
+    "MenuScreensMix",
+    "SheetsMix"
+  ],
+  "injectors": {
+    "maxShiftBy": 10,
+    "defaultRequire": 1
+  },
+  "refmap": "mixins.wider_ender_chests.refmap.json"
+}

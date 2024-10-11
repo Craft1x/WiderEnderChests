@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "wider_ender_chests",
+  "version": "1.0.2",
+  "name": "Wider Ender Chests",
+  "description": "Craft new ender chests and unlock additional inventory slots!",
+  "authors": [
+    "Lupin, Craft1x"
+  ],
+  "contact": {
+    "homepage": "https://linktr.ee/craft1x"
+  },
+  "license": "CC0-1.0",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.craftix.wider_ender_chests.MainEntrypointFabric"
+    ]
+  },
+  "mixins": [
+    "mixins.wider_ender_chests.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": ">=1.20.1",
+    "java": ">=17",
+    "fabric-api": "*",
+    "cloth-config": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
